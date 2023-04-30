@@ -1,13 +1,5 @@
 import React from "react";
 import './Button.css'
-const Button = (props) => {
-
-    return(
-        <div>
-            <button {...props}>{props.children}</button>
-        </div>
-    )
-
-}
+const Button = ({children, ...props}) => <button {...props}>{children}</button>
 
 export default Button;
